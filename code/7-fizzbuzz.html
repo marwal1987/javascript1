@@ -11,7 +11,7 @@
     <script>
       // Här använder jag %-operatorn för att se om varje nummer 1-100 är jämt delbart med 3, 5 eller båda.
       // % räknar ju ut resten av en division.
-      // Så om restvärdet blir noll så betyder det att talet är jämt delbart med siffran 3, 5 eller båda.
+      // Så om restvärdet blir noll så betyder det att det är sant och respektive log körs. Annars loggas en siffra.
       // Men något är fel här, för FizzBuzz blir aldrig utskrivet.
       /*
       for (let i = 1; i <= 100; i++) {
@@ -26,9 +26,8 @@
         }
       }
 */
-      // Efter att jag kollat runt verkar det bero på att loopen aldrig når den sista else if
-      // där FizzBuzz ska skrivas ut...
-      // För att antingen har redan något av förhållandena i Fizz eller Buzz körts och börjat om loopen.
+      // Efter att jag kollat runt verkar det bero på att loopen aldrig når den sista else if där FizzBuzz ska skrivas ut...
+      // För att antingen har redan något av förhållandena i Fizz eller Buzz uppfyllts eller så gäller inget av det och siffran skrivs ut.
       // Så om jag flyttar upp FizzBuzz condition överst borde det bli rätt?
       // Det kanske är värt att använda === också om det är praxis.
       for (let i = 1; i <= 100; i++) {
