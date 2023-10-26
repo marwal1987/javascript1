@@ -16,31 +16,10 @@
       // then on another line, it should be assigned "Orange").
       // To complete this task, you should see "The fruit is Orange" in the console.
 
-      // Om jag vill ändra värdet i en variabel efter det redan fått ett värde vill jag ju inte använda const. Därför ändrade jag till let.
-      // Jag hoppas det är rätt väg att gå.
+      // Eftersom jag inte får göra så här med en const variabel ändrade jag till let.
       let fruit = "Apple";
       fruit = "Orange";
       console.log("The fruit is", fruit);
-
-      /* Eller skapa strängobjekt för att behålla const?
-  const fruit = new String("Apple");
-  console.log("The fruit is", fruit);
-  fruit.value = "Orange";
-  console.log("The fruit is", fruit);
-
- Om jag kör den koden istället i node i terminalen får jag:
-  
-    const fruit = new String("Apple");
-    console.log("The fruit is", fruit);
->    The fruit is [String: 'Apple']
-    fruit.value = "Orange";                                                                                                                                                                                      
-    'Orange'
-    console.log("The fruit is", fruit);
->    The fruit is [String: 'Apple'] { value: 'Orange' }
-  
-  Vilket inte är exakt det resultat som efterfrågades...
-  Så jag antar att det inte är det du vill ha.
-  */
     </script>
   </body>
 </html>
